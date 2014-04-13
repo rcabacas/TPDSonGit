@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<simulationConfiguration>
+	<traceFile>mysimulation</traceFile>
+	
+	<nodes>5</nodes>
+	<messages>126</messages>
+
+	<cycle>
+		<simulationTime>300</simulationTime>
+		<interval>1</interval>
+		<dutyCycle>10</dutyCycle>
+	</cycle>
+
+	<energy>
+		<energyStorageCapacity>20</energyStorageCapacity>
+		<initialEnergy>5</initialEnergy>
+		<transmitEnergy>0.027</transmitEnergy>
+		<receiveEnergy>0.034</receiveEnergy>
+		<sleepEnergy>0.0006</sleepEnergy>
+		<MCUActiveEnergy>0.0015</MCUActiveEnergy>
+	</energy>
+
+	<consoleOptions>
+		<ehConsoleView>true</ehConsoleView>
+		<outputConfigurations>true</outputConfigurations>
+		<realTime>true</realTime>
+	</consoleOptions>
+
+	<energyHarvestingSources>
+		<solar>true</solar>
+		<sInactive>
+			<start>0</start>
+			<end>0</end>
+		</sInactive>
+		<wind>false</wind>
+		<wInactive>
+			<start>0</start>
+			<end>0</end>
+		</wInactive>
+		<piezo>true</piezo>
+		<pInactive>
+			<start>0</start>
+			<end>0</end>
+		</pInactive>
+		<heat>true</heat>
+		<hInactive>
+			<start>0</start>
+			<end>0</end>
+		</hInactive>
+		<allowZero>true</allowZero>
+	</energyHarvestingSources>
+
+	<traceOptions>
+		<traceEnergyHarvesting>true</traceEnergyHarvesting>
+		<traceSleep>true</traceSleep>
+		<traceRTS>true</traceRTS>
+		<traceCTS>true</traceCTS>
+	</traceOptions>
+
+</simulationConfiguration>
