@@ -11,6 +11,8 @@ namespace TPDSSimulator
     {
         static void Main(string[] args)
         {
+            //Comment added by Regin
+            //Change this for config file location
             string configURL = "C:/Users/UBSYS/Documents/Dropbox/TPDSSimulator/TPDSSimulator/configuration.xml";
 
             Initialize(configURL);
